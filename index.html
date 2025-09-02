@@ -21,27 +21,32 @@
 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Create a new post
 </button>
-
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
       </div>
       <div class="modal-body">
           <label for="message-text" class="col-form-label">Caption:</label>
-            <textarea class="form-control opacity-50" id="message-text">Add the caption of your  post here</textarea>           
+            <textarea class="form-control opacity-50" id="message-text">Add the caption of your  post here</textarea>
+            <button type="button" class="btn btn-light"><i class="fas fa-camera-alt"></i>
+            </button>
+            <button type="button" class="btn btn-light"><i class="fas fa-map-marker-alt"></i>
+            </button>
       </div>      
-      <div class="modal-footer">
+      <div class="modal-footer">        
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-success">Publish</button>
       </div>
     </div>
   </div>
 </div>
-      <div class="btn-group">
+<!--fin modal-->
+<div class="btn-group">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     <i class="fas fa-cog"></i>
   </button>
@@ -53,7 +58,6 @@
     <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
   </ul>
 </div>
-  </div>
 </nav>
     <!--fin del nav-->  
 <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
@@ -69,67 +73,77 @@
   <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
    <div class="container text-center">
   <div class="row row-cols-3">
-    <div class="col">
+    <div class="col mb-4">
       <img src="https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s" class="img-fluid">
     </div>
-    <div class="col">
+    <div class="col mb-4">
       <img src="https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g" class="img-fluid">
     </div>
-    <div class="col">
+    <div class="col mb-4">
       <img src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE" class="img-fluid">
     </div>
-    <div class="col">
+    <div class="col mb-4">
       <img src="https://fastly.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w" class="img-fluid">
     </div>
-    <div class="col">
+    <div class="col mb-4">
       <img src="https://fastly.picsum.photos/id/15/2500/1667.jpg?hmac=Lv03D1Y3AsZ9L2tMMC1KQZekBVaQSDc1waqJ54IHvo4" class="img-fluid">
     </div>
-    <div class="col">
+    <div class="col mb-4">
       <img src="https://fastly.picsum.photos/id/18/2500/1667.jpg?hmac=JR0Z_jRs9rssQHZJ4b7xKF82kOj8-4Ackq75D_9Wmz8" class="img-fluid">
     </div>
-    <div class="col">
+    <div class="col mb-4">
       <img src="https://fastly.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ" class="img-fluid">
     </div>
-    <div class="col">
+    <div class="col mb-4">
       <img src="https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68" class="img-fluid">
     </div>
-    <div class="col">
+    <div class="col mb-4">
       <img src="https://fastly.picsum.photos/id/17/2500/1667.jpg?hmac=HD-JrnNUZjFiP2UZQvWcKrgLoC_pc_ouUSWv8kHsJJY" class="img-fluid">
     </div>
   </div>
-</div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
+</div>          
   </div>
-
   <!--cartas-->
   <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-    <div class="card  mx-auto p-2" style="width: 30rem;">
-       <p class="fs-4">Fin de semana viendo el mar</p>
+    <div class="card  mx-auto mb-4" style="width: 30rem;">
+       <div class="row d-flex justify-content-between">
+  <div class="col-auto">
+    <p class="fs-4">Fin de semana en la playa</p>
+  </div>
+  <div class="col-auto">
+    <p>05/20</p>
+  </div>
+</div>
         <img src="https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s" class="card-img-top">
         <div class="card-body">
           <p class="fw-semibold">50 Likes</p>
          <p class="card-text"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque delectus voluptas necessitatibus quibusdam explicabo dolores, distinctio provident numquam asperiores quae sapiente adipisci est doloremque quam esse doloribus et corrupti commodi.</p>
         </div>
   </div>
-    <div class="card mx-auto p-2" style="width: 30rem;">
-       <p class="fs-4">Tiempo para la calma</p>
+    <div class="card mx-auto mb-4" style="width: 30rem;">
+       <div class="row d-flex justify-content-between">
+  <div class="col-auto">
+    <p class="fs-4">Tiempo para la calma</p>
+  </div>
+  <div class="col-auto">
+    <p>08/20</p>
+  </div>
+</div>
         <img src="https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g" class="card-img-top">
         <div class="card-body">
           <p class="fw-semibold">90 Likes</p>
          <p class="card-text"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque delectus voluptas necessitatibus quibusdam explicabo dolores, distinctio provident numquam asperiores quae sapiente adipisci est doloremque quam esse doloribus et corrupti commodi.</p>
         </div>
   </div>
-  <div class="card mx-auto p-2" style="width: 30rem;">
-       <p class="fs-4">Muelle de las almas</p>
+  <div class="card mx-auto mb-4" style="width: 30rem;">
+       <div class="row d-flex justify-content-between">
+  <div class="col-auto">
+    <p class="fs-4">Muelle de las almas</p>
+  </div>
+  <div class="col-auto">
+    <p>15/20</p>
+  </div>
+</div>
         <img src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE" class="card-img-top">
         <div class="card-body">
           <p class="fw-semibold">30 Likes</p>
@@ -137,15 +151,6 @@
         </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
   </div>
 </div>
 <!--fin cuadricula-->
